@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+
+android {
+    buildToolsVersion "28.0.3"
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "cz.skaut.odyssea.odymaterialy"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.github.GoogleChrome:custom-tabs-client:e446d08014'
+}
