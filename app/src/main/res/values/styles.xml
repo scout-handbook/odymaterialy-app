@@ -1,5 +1,5 @@
 <resources>
-    <style name="Theme.TwaSplash" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="Theme.TwaSplash" parent="@android:style/Theme.Holo.Light.NoActionBar">
         <item name="android:windowNoTitle">true</item>
         <item name="android:backgroundDimEnabled">false</item>
     </style>
