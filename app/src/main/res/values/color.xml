@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="splashBackground">@color/background</color>
+    <color name="background">@color/white</color>
+
+    <color name="white">#ffffff</color>
+
+</resources>
