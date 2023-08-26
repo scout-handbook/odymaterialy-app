@@ -7,11 +7,8 @@
                     \"delegate_permission/common.handle_all_urls\"
                 ],
                 \"target\": {
-                    \"namespace\": \"android_app\",
-                    \"package_name\": \"cz.skaut.odyssea.odymaterialy\",
-                    \"sha256_cert_fingerprints\": [
-                        \"03:DC:A3:A5:31:92:74:43:FD:89:67:30:9A:4C:10:BD:A0:C3:55:33:E6:AB:E4:C3:E6:17:01:19:6F:2C:B1:C2\"
-                    ]
+                    \"namespace\": \"web\",
+                    \"site\": \"https://odymaterialy.skauting.cz\"
                 }
             }
         ]
