@@ -4,7 +4,7 @@ android {
     compileSdkVersion 34
     defaultConfig {
         applicationId "cz.skaut.odyssea.odymaterialy"
-        minSdkVersion 16
+        minSdkVersion 18
         targetSdkVersion 34
         versionCode 3
         versionName "1.2"
