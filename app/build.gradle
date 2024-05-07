@@ -9,6 +9,9 @@ android {
         versionCode 3
         versionName "1.2"
     }
+    buildFeatures {
+        buildConfig true
+    }
     buildTypes {
         release {
             minifyEnabled false
