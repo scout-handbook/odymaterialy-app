@@ -10,7 +10,7 @@ android {
         versionName "1.2"
     }
     buildFeatures {
-        buildConfig true
+        buildConfig = true
     }
     buildTypes {
         release {
@@ -21,7 +21,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
     }
-    namespace 'cz.skaut.odyssea.odymaterialy'
+    namespace = 'cz.skaut.odyssea.odymaterialy'
 }
 
 dependencies {
