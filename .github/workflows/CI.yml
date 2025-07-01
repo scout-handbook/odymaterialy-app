@@ -18,6 +18,12 @@ jobs:
           distribution: 'temurin'
           cache: gradle
 
+      - name: Setup dummy keystore
+        run: |
+          keytool -genkey -keystore upload-keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias upload -dname "cn=Unknown, ou=Unknown, o=Unknown, c=Unknown" -storepass password -keypass password
+          mkdir -p ~/.gradle
+          cp gradle_properties_keystore.sample ~/.gradle/gradle.properties
+
       - name: "Build"
         run: |
           ./gradlew build
