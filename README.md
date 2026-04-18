@@ -12,6 +12,16 @@ Built as a [Trusted Web Activity (TWA)](https://developer.chrome.com/docs/androi
 
 Release builds require signing properties in `gradle.properties` — see `gradle_properties_keystore.sample`.
 
+## Publishing a new version
+
+1. Bump `versionCode` (integer, must increase) and `versionName` (human-readable) in `app/build.gradle`.
+3. Build the release bundle:
+   ```bash
+   ./gradlew bundleRelease
+   ```
+   The AAB will be at `app/build/outputs/bundle/release/app-release.aab`.
+4. Upload the AAB to Google Play Console and publish the release.
+
 ## CI
 
 GitHub Actions runs `./gradlew build --no-configuration-cache` on all pushes and pull requests.
